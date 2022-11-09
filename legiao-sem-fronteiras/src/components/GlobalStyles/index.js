@@ -2,8 +2,8 @@
 import { createGlobalStyle } from "styled-components";
 
 export const Media = {
-    desktop: '(min-width: 1000px)',
-    mobile: '(min-width: 300px)'
+    mobile: '(min-width: 300px)',
+    desktop: '(min-width: 1000px)'
 }
 
 export const Colors = {
@@ -24,6 +24,10 @@ export const Global = createGlobalStyle`
         list-style: none;
         text-decoration: none;
         transition: all .5s ease;
+    }
+
+    body{
+        overflow-x: hidden;
     }
     
     .dark{

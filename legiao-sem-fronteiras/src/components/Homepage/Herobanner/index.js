@@ -5,7 +5,7 @@ import React from "react";
 import HerobannerStyled from "./style";
 
 // Import Images
-import mainImage from "../../images/example.png"
+import mainImage from "./images/example.png"
 
 const Herobanner = () => {
     return(

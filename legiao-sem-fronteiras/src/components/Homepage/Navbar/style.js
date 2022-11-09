@@ -1,9 +1,8 @@
 // Import utilites
 import styled from "styled-components";
-import { Colors } from "../GlobalStyles";
+import { Colors } from "../../GlobalStyles";
 
 export const NavbarStyledMobile = styled.nav`
-
     height: 4rem;
 
     display: flex;
@@ -32,19 +31,22 @@ export const NavbarStyledMobile = styled.nav`
 `
 
 export const NavBarStyledDesktop = styled.nav`
-
-    height: 5rem;
+    width: 95vw;
+    height: 4rem;
+    margin: auto;
+   
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    align-self: center;
 
     img{
         position: relative;
         z-index: 1;
 
-        top: 35%;
+        top: 50%;
 
         border-radius: 10rem;
         border: 2px solid ${Colors.mainColor};
@@ -54,6 +56,7 @@ export const NavBarStyledDesktop = styled.nav`
     .navbar-links{
         display: flex;
         gap: 12rem;
+        margin-top: 1rem;
 
        text-transform:  uppercase;
 

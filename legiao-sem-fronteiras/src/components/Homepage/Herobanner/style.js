@@ -1,10 +1,46 @@
 // Import styles
 import styled from "styled-components";
-import { Colors } from "../GlobalStyles";
-import { Media } from "../GlobalStyles";
+import { Colors } from "../../GlobalStyles";
+import { Media } from "../../GlobalStyles";
 
 const HerobannerStyled = styled.div`
 
+ /* Responsividade para Desktop */
+ @media ${Media.desktop}  {
+
+    .title-container{
+        width: 95% !important;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        margin: auto !important; 
+    }
+
+    .background-title-text{
+        top: 25%;
+        font-size: 10rem;
+
+
+        position: relative !important;
+        display: inline !important;
+    }
+
+    .welcome{
+        margin-top: 1rem !important;
+    }
+
+    .main-title{
+      width: 80% !important;
+      font-size: 4rem !important;
+    }
+
+    .main-paragraph{
+        width: 50% !important;
+    }
+
+    }
+/* Mobile styles */
 display: flex;
 flex-direction: column;
 
@@ -13,17 +49,7 @@ height: 100vh;
 
 background-color: black;
 
-img{
-    background:  no-repeat cover;
-    width: 95%;
-    height: 95%;
-    opacity: 30%;
 
-    margin: auto;
-
-    z-index: 0;
-
-}
 
 .title-container{
     background-image: url("${props => props.mainImage}");
@@ -43,9 +69,6 @@ img{
     text-align: center;
 
     .background-title-text{
-        top: 15%;
-        font-size: 2.5rem;
-
         display: none;
     }
 
@@ -80,13 +103,10 @@ img{
     .title-btn{
         margin-top: 1rem;
     }
-    /* Responsividade para Desktop */
-    @media ${Media.desktop}  {
-        .welcome{
-            color: red;
-        }
 
-    }
+    
+
+    
 }
 
 `

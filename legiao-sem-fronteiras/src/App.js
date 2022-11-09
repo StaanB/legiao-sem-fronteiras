@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 // Import components
 import { Global, Media } from './components/GlobalStyles';
-import Home from './components/Home';
+import Home from './components/Homepage/Home';
+import Event from './components/Eventpage/Event';
 
 const AppDiv = styled.div`
   
@@ -37,6 +38,7 @@ function App() {
       <AppDiv className="App">
         <Global />
         <Home />
+        <Event />
       </AppDiv>
     </>
   );

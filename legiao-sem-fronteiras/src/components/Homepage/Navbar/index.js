@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { NavbarStyledMobile, NavBarStyledDesktop } from "./style";
 
 // Import images
-import logo from "../../images/legiao.png"
+import logo from "./images/legiao.png"
 
 
 // Import Utilities

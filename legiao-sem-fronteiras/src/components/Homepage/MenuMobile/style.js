@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { Colors } from '../GlobalStyles'
+import { Colors } from '../../GlobalStyles'
 
 const Container = styled.section`
     position: absolute;
