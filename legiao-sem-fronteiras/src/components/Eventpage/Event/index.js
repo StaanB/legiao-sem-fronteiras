@@ -9,8 +9,8 @@ import Banner from "../Banner";
 const Event = () => {
     return(
         <>
-        <EventStyled>
-        <Banner />
+        <EventStyled id="event">
+        <Banner/>
         </EventStyled>
         </>
     )

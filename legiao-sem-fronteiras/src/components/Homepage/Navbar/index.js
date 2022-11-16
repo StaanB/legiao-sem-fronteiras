@@ -16,13 +16,15 @@ const Navbar = ({ setMenuIsVisible }) => {
             <NavBarStyledDesktop id='navbar-desktop'>
                 <div className='navbar-links'>
                     <a href="#home">Home</a>
-                    <a href="#about">Sobre nós</a>
+                    <a href="#event">Eventos</a>
+
                 </div>
 
                 <img src={logo} alt="Legião Logo"></img>
 
                 <div className='navbar-links'>
-                    <a href="#event">Eventos</a>
+                    <a href="#about">Sobre nós</a>
+
                     <a href="#contact">Contato</a>
                 </div>
             </NavBarStyledDesktop>

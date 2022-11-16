@@ -24,6 +24,7 @@ export const Global = createGlobalStyle`
         list-style: none;
         text-decoration: none;
         transition: all .5s ease;
+        border-radius: 5px;
     }
 
     body{

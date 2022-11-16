@@ -11,6 +11,49 @@ export const BannerStyled = styled.div`
         flex-direction: row !important;
 
         margin-top: 5rem !important;
+
+        .banner-title{
+            width: 50%;
+            margin: 2rem !important;
+
+            h2{
+                font-size: 2rem !important;
+            }
+
+            .background-banner-text{
+            font-size: 3rem !important;
+            top: 20% !important;
+        }
+
+        .banner-icons{
+            flex-direction: row !important;
+            gap: 1rem;
+        }
+
+        p{
+            font-size: 1rem;
+            width: 70%;
+        }
+        }
+
+        .banner-timer{
+                position: relative !important;
+                right: 3% !important;
+
+            .timer{
+                grid-template-columns: 1fr 1fr 1fr 1fr !important;
+
+                margin: 1.8rem !important;
+
+                li{
+                    font-size: 2rem !important;
+                }
+            }
+
+            
+        }
+
+       
     }
 
     /* Mobile styles responsive */
@@ -41,7 +84,7 @@ export const BannerStyled = styled.div`
         font-size: 3rem;
         letter-spacing: .7rem;
 
-        top: 75%;
+        top: 73%;
       }
 
       .banner-icons{

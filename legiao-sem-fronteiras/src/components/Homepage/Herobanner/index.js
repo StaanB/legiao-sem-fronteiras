@@ -11,7 +11,7 @@ const Herobanner = () => {
     return(
         <>
         <HerobannerStyled mainImage={mainImage}>
-        <div className="title-container" >
+        <div className="title-container">
 
             <span className="background-title-text background-effect">Irmandade</span>
 

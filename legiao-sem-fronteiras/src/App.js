@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import { Global, Media } from './components/GlobalStyles';
 import Home from './components/Homepage/Home';
 import Event from './components/Eventpage/Event';
+import About from './components/Aboutpage/About';
 
 const AppDiv = styled.div`
   
@@ -39,6 +40,7 @@ function App() {
         <Global />
         <Home />
         <Event />
+        <About />
       </AppDiv>
     </>
   );

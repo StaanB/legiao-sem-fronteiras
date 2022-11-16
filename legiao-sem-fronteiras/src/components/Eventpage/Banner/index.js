@@ -14,7 +14,7 @@ const Banner = () => {
     return (
         <>
             <BannerStyled>
-                <div className="banner-title">
+                <div className="banner-title" id="event">
                     <h2>independence day ride 2022</h2>
 
                     <h3 className="background-banner-text background-effect">Evento</h3>
@@ -24,7 +24,7 @@ const Banner = () => {
 
                         <li><BsFillCalendarCheckFill />17 de Agosto de 2022</li>
 
-                        <li><MdAccessTime/>07:00 horas</li>
+                        <li><MdAccessTime/>07:00</li>
                     </ul>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>

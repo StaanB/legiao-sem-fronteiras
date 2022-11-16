@@ -15,8 +15,9 @@ const MenuMobile = ({ menuIsVisible, setMenuIsVisible }) => {
                 <VscChromeClose size={45} onClick={() => setMenuIsVisible(false)} />
                 <nav>
                     <a href="#home">Home</a>
-                    <a href="#about">Sobre nós</a>
                     <a href="#event">Eventos</a>
+
+                    <a href="#about">Sobre nós</a>
                     <a href="#contact">Contato</a>
                 </nav>
 
