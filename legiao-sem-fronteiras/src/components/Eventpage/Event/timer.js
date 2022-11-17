@@ -21,4 +21,5 @@ export function timer() {
 
     let intervalo = setInterval(atualizar, 1000)
 
+
 }

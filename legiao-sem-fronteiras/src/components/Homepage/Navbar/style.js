@@ -18,7 +18,7 @@ export const NavbarStyledMobile = styled.nav`
         border: 2px solid ${Colors.mainColor};
         width: 5rem;
 
-        z-index: 1;
+        z-index: 0;
     }
 
     .hamburguer-menu{

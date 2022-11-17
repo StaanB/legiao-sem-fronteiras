@@ -6,10 +6,51 @@ export const AboutStyled = styled.section`
 
 @media ${Media.desktop} {
     
+        display: flex;
+        flex-direction: row;
+        gap: 9rem;
+
+        height: 100vh !important;
+
+        margin-top: 1rem;
+
+        .about-image-container{
+            img{
+                width: 85% !important;
+                margin-left: 11rem !important;
+            }
+
+            .medal-square{
+                width: 40% !important;
+                right: 1rem;
+            }
+        }
+
+        .about-title-container{
+            width: 75% !important;
+
+            margin-top: 6rem !important;
+            
+            h2{
+                font-size: 2rem !important;
+                width: 80% !important;
+            }
+
+            .about-title-paragraph{
+                width: 70% !important;
+            }
+
+            .cards-section{
+                display: grid !important;
+                grid-template-columns: 1fr 1fr !important;
+                width: 85% !important;
+            }
+        }
+    
 }
 
 width: 100vw;
-height: 100vh;
+height: 170vh;
 
 .about-image-container{
     display: flex;
@@ -24,6 +65,7 @@ height: 100vh;
         width: 70%;
 
         position: relative;
+        z-index: 0;
 
         bottom: 5rem;
         margin-bottom: -1.5rem;
@@ -104,7 +146,8 @@ height: 100vh;
             width: 50%;
             padding: .7rem;
             font-size: 4rem;
-            background-color: ${Colors.mainColor2};
+            color: ${Colors.bgColor};
+            background-color: ${Colors.mainColor};
             
         }
 

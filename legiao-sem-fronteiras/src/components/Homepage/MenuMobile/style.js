@@ -16,7 +16,7 @@ const Container = styled.section`
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 0;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;

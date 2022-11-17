@@ -8,11 +8,12 @@ export const Media = {
 
 export const Colors = {
     bgColor: "#111",
-    bgColor2: '#332E33',
+    bgColor2: 'gray',
     mainColor: '#E3C63B',
     mainColor2: '#F0AA32',
     whiteColor: '#E2F2DA'
 }
+
 
 
 export const Global = createGlobalStyle`

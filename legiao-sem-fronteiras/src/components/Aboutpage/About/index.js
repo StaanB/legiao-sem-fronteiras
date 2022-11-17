@@ -4,22 +4,24 @@ import React from "react";
 
 // Import styles
 import { AboutStyled } from "./style";
-import {BiMedal} from "react-icons/bi"
-import {BsPlus} from "react-icons/bs"
-import {GiFullMotorcycleHelmet} from "react-icons/gi"
-import {RiGroupFill} from "react-icons/ri"
-import {FaHandsHelping} from "react-icons/fa"
+import { BiMedal } from "react-icons/bi"
+import { BsPlus } from "react-icons/bs"
+import { GiFullMotorcycleHelmet } from "react-icons/gi"
+import { RiGroupFill } from "react-icons/ri"
+import { FaHandsHelping } from "react-icons/fa"
 import lucio from "./images/lucio.jpg"
 
 const About = () => {
     return (
 
-        <AboutStyled>
+        <AboutStyled id="about" data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-duration="1000">
             <div className="about-image-container">
                 <img src={lucio} alt="foto presidente"></img>
                 <div className="medal-square">
-                    <BiMedal/>
-                    <p>2<BsPlus/></p>
+                    <BiMedal />
+                    <p>2<BsPlus /></p>
                     <span>Anos de experiência</span>
                 </div>
             </div>
@@ -33,7 +35,7 @@ const About = () => {
 
                 <div className="cards-section">
                     <div className="card">
-                        <GiFullMotorcycleHelmet/>
+                        <GiFullMotorcycleHelmet />
                         <div className="card-text">
                             <h3>Viaje com a gente</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
@@ -41,7 +43,7 @@ const About = () => {
                     </div>
 
                     <div className="card">
-                        <RiGroupFill/>
+                        <RiGroupFill />
                         <div className="card-text">
                             <h3>Comunidade ativa</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
@@ -49,7 +51,7 @@ const About = () => {
                     </div>
 
                     <div className="card">
-                        <FaHandsHelping/>
+                        <FaHandsHelping />
                         <div className="card-text">
                             <h3>Ajuda aos membros</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
