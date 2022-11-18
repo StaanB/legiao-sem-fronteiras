@@ -1,7 +1,6 @@
 // Import styles
 import styled from "styled-components";
-import { Colors } from "../../GlobalStyles";
-import { Media } from "../../GlobalStyles";
+import { Colors, Media } from "../../GlobalStyles";
 
 const HerobannerStyled = styled.div`
 
@@ -46,8 +45,6 @@ flex-direction: column;
 
 width: 100vw;
 height: 100vh;
-
-background-color: black;
 
 
 
@@ -102,6 +99,7 @@ background-color: black;
 
     .title-btn{
         margin-top: 1rem;
+        transition: all .5s ease;
     }
 
     

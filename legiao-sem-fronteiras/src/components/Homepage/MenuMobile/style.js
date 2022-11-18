@@ -1,4 +1,7 @@
+// Import Styles
 import styled, { css } from 'styled-components'
+
+// Import Components
 import { Colors } from '../../GlobalStyles'
 
 const Container = styled.section`
@@ -32,6 +35,7 @@ const Container = styled.section`
 
     svg{
         position: absolute;
+
         top: .5rem;
         right: .5rem;
         transform: rotate(45deg);
@@ -42,10 +46,11 @@ const Container = styled.section`
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
         gap: 3rem;
 
         transform: scale(.7);
-
+        
         a{
             color: ${Colors.mainColor};
             font-weight: 400;

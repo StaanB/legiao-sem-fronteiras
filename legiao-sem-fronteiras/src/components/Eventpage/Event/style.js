@@ -1,15 +1,18 @@
-// import utilites
+// import styles
 import styled from "styled-components";
+
+// import Components
 import { Colors, Media } from "../../GlobalStyles";
 
 
 export const BannerStyled = styled.div`
-    /* Desktop responsivity */
+    /* Responsividade para o desktop */
     @media ${Media.desktop} {
-        width: 80% !important;
-        height: 35% !important;
         flex-direction: row !important;
 
+        width: 80% !important;
+        height: 35% !important;
+        
         margin-top: 5rem !important;
 
         .banner-title{
@@ -38,6 +41,7 @@ export const BannerStyled = styled.div`
 
         .banner-timer{
                 position: relative !important;
+
                 right: 3% !important;
 
             .timer{
@@ -56,7 +60,7 @@ export const BannerStyled = styled.div`
        
     }
 
-    /* Mobile styles responsive */
+    /*Estilização para o Mobile */
     display: flex;
     flex-direction: column;
 

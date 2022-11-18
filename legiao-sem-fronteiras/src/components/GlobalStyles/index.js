@@ -1,55 +1,140 @@
 // Import styles
 import { createGlobalStyle } from "styled-components";
 
+// Responsividade
 export const Media = {
     mobile: '(min-width: 300px)',
     desktop: '(min-width: 1000px)'
 }
 
-export const Colors = {
+// Cores para o documento
+export var Colors = {
     bgColor: "#111",
     bgColor2: 'gray',
     mainColor: '#E3C63B',
     mainColor2: '#F0AA32',
-    whiteColor: '#E2F2DA'
+    whiteColor: 'white'
 }
 
-
-
+// Estilização global
 export const Global = createGlobalStyle`
     *{
         font-family: 'Roboto', sans-serif;
+
         margin: 0;
         padding: 0;
+
         box-sizing: border-box;
         list-style: none;
         text-decoration: none;
-        transition: all .5s ease;
+        
         border-radius: 5px;
     }
 
     body{
         overflow-x: hidden;
     }
-    
+    /* Tema principal Dark */
     .dark{
         background-color: black;
-        color: #E2F2DA;
-    }
+        color: ${Colors.whiteColor};
 
+        transition: all 1s ease;
+    }
+    /* Tema light com alterações nas classes */
     .light{
-        background-color: #E2F2DA;
+        background-color: white;
         color: black;
-    }
 
+        transition: all 1s ease;
+
+        .navbar-links{
+            a{
+                color: black;
+            }
+        }
+        
+        .main-title{color: ${Colors.whiteColor}}
+
+        .main-paragraph{color: ${Colors.whiteColor}}
+       
+        .banner-event-container{
+            background-color: gray;
+            
+            .banner-title{
+                color: ${Colors.whiteColor};
+
+                .event-main-paragraph{
+                    color: ${Colors.whiteColor};
+                }
+            }
+
+            .banner-timer{
+                background-color: ${Colors.whiteColor};
+            }
+        }
+
+        .about-image-container{
+            .medal-square{
+                background-color: gray;
+
+                p, span{
+                    color: white;
+                }
+            }
+        }
+
+        .about-title-container{
+            .about-title-paragraph{
+                color: black;
+                font-weight: 500;
+            }
+
+            .card{
+                .card-text{
+                    p{
+                        color: black;
+                        font-weight: 500;
+                    }
+                }
+                svg{
+                        color: white;
+                    }
+            }
+        }
+        .contact-social-medias{
+            p{color: black;
+            font-weight: 500;}
+        }
+
+        .contact-consult-area{
+            .number-icon{
+                span{color: black;
+                    font-weight: 500;}
+            }
+
+            .contact-information-card{
+                p{color: black;
+                font-weight: 500;}
+            }
+        }
+
+        .copyright-section{
+            p{color: black;
+            font-weight: 500;}
+        }
+
+    }
+    /* Textos no fundo */
     .background-effect{
         position: relative;
         text-align: center;
-
-        letter-spacing: .25rem;
         text-transform: uppercase;
 
+        letter-spacing: .25rem;
+        
         opacity: 8%;
+        
         color: rgba(0, 0, 0, 0);
         -webkit-text-stroke-color: white;
         -webkit-text-stroke-width: 1px;

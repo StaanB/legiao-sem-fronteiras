@@ -1,17 +1,18 @@
-// import utilites
+// import styles
 import styled from "styled-components";
+
+// Import components
 import { Colors, Media } from "../../GlobalStyles";
 
 export const AboutStyled = styled.section`
 
 @media ${Media.desktop} {
-    
+        /* Responsividade para desktop */
         display: flex;
         flex-direction: row;
+        
         gap: 9rem;
-
         height: 100vh !important;
-
         margin-top: 1rem;
 
         .about-image-container{
@@ -42,13 +43,14 @@ export const AboutStyled = styled.section`
 
             .cards-section{
                 display: grid !important;
+
                 grid-template-columns: 1fr 1fr !important;
                 width: 85% !important;
             }
         }
     
 }
-
+/* Responsividade para Mobile */
 width: 100vw;
 height: 170vh;
 
@@ -62,24 +64,24 @@ height: 170vh;
     margin: 1rem;}
 
     .medal-square{
-        width: 70%;
-
-        position: relative;
-        z-index: 0;
-
-        bottom: 5rem;
-        margin-bottom: -1.5rem;
-
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        position: relative;
+        z-index: 0;
+
+        width: 70%;
+        bottom: 5rem;
+        margin-bottom: -1.5rem;
         gap: .5rem;
         padding: 1.5rem;
+
         background-color: ${Colors.bgColor};
 
         svg{
             font-size: 4rem;
+
             color: ${Colors.mainColor};
         }
 
@@ -99,24 +101,26 @@ height: 170vh;
 }
 
 .about-title-container{
-    width: 90%;
     margin: auto;
-
     display: flex;
     flex-direction: column;
     align-items: start;
+
+    width: 90%;
     gap: 1rem;
 
     .about-title{
         text-transform: uppercase;
         color: ${Colors.mainColor};
+        
         font-size: .8rem;
     }
 
     h2{
+        text-transform: uppercase;
+
         font-size: 1.4rem;
         line-height: 2rem;
-        text-transform: uppercase;
         width: 85%;
     }
 
@@ -125,9 +129,9 @@ height: 170vh;
 
         margin-top: 1rem;
         margin-bottom: 1rem;
-
         font-size:.9rem;
         line-height: 1.2rem;
+
         color: gray;
         font-weight: 300;
     }
@@ -139,21 +143,24 @@ height: 170vh;
 
     .card{
         display: flex;
+
         gap: 1rem;
         margin-bottom: 1.5rem;
 
         svg{
             width: 50%;
+
             padding: .7rem;
             font-size: 4rem;
+
             color: ${Colors.bgColor};
-            background-color: ${Colors.mainColor};
-            
+            background-color: ${Colors.mainColor}; 
         }
 
         .card-text{
             display: flex;
             flex-direction: column;
+
             gap: .7rem;
 
             h3{
@@ -161,10 +168,12 @@ height: 170vh;
             }
 
             p{
+                width: 90%;
+
                 line-height: 1.3rem;
                 font-size: .9rem;
+                
                 font-weight: 300;
-                width: 90%;
                 color: gray;
             }
         }

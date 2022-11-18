@@ -4,12 +4,14 @@ import React from "react";
 
 // Import styles
 import { AboutStyled } from "./style";
+import lucio from "./images/lucio.jpg"
+
+// Import Icons
 import { BiMedal } from "react-icons/bi"
 import { BsPlus } from "react-icons/bs"
 import { GiFullMotorcycleHelmet } from "react-icons/gi"
 import { RiGroupFill } from "react-icons/ri"
 import { FaHandsHelping } from "react-icons/fa"
-import lucio from "./images/lucio.jpg"
 
 const About = () => {
     return (
@@ -17,15 +19,18 @@ const About = () => {
         <AboutStyled id="about" data-aos="fade-up"
             data-aos-easing="ease"
             data-aos-duration="1000">
+
+            {/* Imagem com medalha de anos de experiência */}
             <div className="about-image-container">
                 <img src={lucio} alt="foto presidente"></img>
                 <div className="medal-square">
                     <BiMedal />
-                    <p>2<BsPlus /></p>
+                    <p>1<BsPlus /></p>
                     <span>Anos de experiência</span>
                 </div>
             </div>
 
+            {/* Seção com informações do grupo */}
             <div className="about-title-container">
                 <h3 className="about-title">Sobre o motogrupo</h3>
 
@@ -34,6 +39,7 @@ const About = () => {
                 <p className="about-title-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud tempor dolore adispa</p>
 
                 <div className="cards-section">
+                    {/* Cards com informações de companheiros */}
                     <div className="card">
                         <GiFullMotorcycleHelmet />
                         <div className="card-text">
@@ -61,9 +67,7 @@ const About = () => {
 
             </div>
 
-
         </AboutStyled>
-
     )
 }
 

@@ -1,44 +1,20 @@
-// Import utilities
-import styled from 'styled-components'
+// Import style
+import { AppDiv } from './style';
 
 // Import components
-import { Global, Media } from './components/GlobalStyles';
+import { Global } from './components/GlobalStyles';
 import Home from './components/Homepage/Home';
 import Event from './components/Eventpage/Event';
 import About from './components/Aboutpage/About';
 import Contact from './components/Contactpage/Contact';
-
-const AppDiv = styled.div`
-  
-  @media ${Media.mobile}  {
-    width: 100%;
-    height: 100%;
-
-    #navbar-desktop{
-      display: none;
-    }
-  }
-
-  @media ${Media.desktop}  {
-    width: 100%;
-    height: 100%;
-
-    #navbar-mobile{
-      display: none;
-    }
-    #navbar-desktop{
-      display: flex;
-    }
-  }
-  
-
-`
+import Button from './components/themeChange/Button';
 
 function App() {
   return (
     <>
       <AppDiv className="App">
         <Global />
+        <Button />
         <Home />
         <Event />
         <About />
