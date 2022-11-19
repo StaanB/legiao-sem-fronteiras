@@ -1,6 +1,6 @@
 // Função do timer para substituir na seção de eventos
 export function timer() {
-    let data = new Date("jan 1 2023 00:00:00")
+    let data = new Date("dec 8 2022 00:00:00")
 
     function atualizar() {
         // Diferença da data do evento e da data atual (em segundos)

@@ -21,11 +21,11 @@ const Herobanner = () => {
 
                     <span className="welcome">Bem vindo a irmandade</span>
 
-                    <h1 className="main-title">We'r not only riding club, we'are team of adventure life</h1>
+                    <h1 className="main-title">Moto Clube Legião Sem Fronteiras, venha fazer parte</h1>
 
                     <p className="main-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor</p>
 
-                    <a href="#contact"><button className="btn title-btn">Contate-nos</button></a>
+                    <a href="#contact"><button className="btn title-btn">Fale conosco</button></a>
 
                 </div>
 
