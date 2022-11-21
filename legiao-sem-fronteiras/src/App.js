@@ -1,25 +1,22 @@
-// Import style
-import { AppDiv } from './style';
+// Import Routes
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Import components
-import { Global } from './components/GlobalStyles';
-import Home from './components/Homepage/Home';
-import Event from './components/Eventpage/Event';
-import About from './components/Aboutpage/About';
-import Contact from './components/Contactpage/Contact';
-import Button from './components/themeChange/Button';
+// Páginas
+import EventSecondPage from './Pages/EventSecondPage/EventSecondPage';
+import MainPage from './Pages/MainPage/MainPage';
+
+
 
 function App() {
   return (
     <>
-      <AppDiv className="App">
-        <Global />
-        <Button />
-        <Home />
-        <Event />
-        <About />
-        <Contact />
-      </AppDiv>
+      <Router>
+        <Routes>
+          <Route path='/' element={<MainPage/>} />
+          <Route path='/eventos' element={<EventSecondPage/>} />
+        </Routes>
+      </Router>
+
     </>
   );
 }

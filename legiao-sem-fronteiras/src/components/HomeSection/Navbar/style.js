@@ -47,8 +47,10 @@ export const NavBarStyledDesktop = styled.nav`
     img{
         position: relative;
         z-index: 1;
+        
 
         top: 50%;
+        left: 8%;
 
         border-radius: 10rem;
         border: 2px solid ${Colors.mainColor};
@@ -57,9 +59,11 @@ export const NavBarStyledDesktop = styled.nav`
 
     .navbar-links{
         display: flex;
+        flex-direction: row;
+        
         text-transform:  uppercase;
 
-        gap: 12rem;
+        gap: 7rem;
         margin-top: 1rem;
         
        a{

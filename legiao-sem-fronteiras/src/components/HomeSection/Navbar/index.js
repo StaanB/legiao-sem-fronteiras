@@ -1,6 +1,9 @@
 // Import Utilities
 import React from "react";
 
+// Import Router
+import {Link} from 'react-router-dom'
+
 // Import Icons
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { NavbarStyledMobile, NavBarStyledDesktop } from "./style";
@@ -15,14 +18,15 @@ const Navbar = ({ setMenuIsVisible }) => {
             <NavBarStyledDesktop id='navbar-desktop'>
                 {/* Parte Esquerda da Navbar */}
                 <div className='navbar-links'>
-                    <a href="#home">Home</a>
-                    <a href="#event">Eventos</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/eventos">Eventos</Link>
                 </div>
                 {/* Imagem do Logo no centro */}
                 <img src={logo} alt="Legião Logo"></img>
 
                 {/* Parte Esquerda da Navbar */}
                 <div className='navbar-links'>
+                    <a href="#">Galeria</a>
                     <a href="#about">Sobre nós</a>
                     <a href="#contact">Contato</a>
                 </div>

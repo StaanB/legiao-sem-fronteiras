@@ -1,5 +1,5 @@
 // Import utilites
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 
 // Import Icons
 import { IoMdSunny } from "react-icons/io"
@@ -7,6 +7,30 @@ import { BsFillMoonFill } from "react-icons/bs"
 
 const Button = () => {
     const [theme, setTheme] = useState('dark')
+
+    useEffect(() => {
+        if (
+            document.querySelector('html').classList.contains('dark')
+        ){
+            const darkButton = document.getElementById("dark-button")
+            darkButton.classList.remove("visible")
+            darkButton.classList.add("invisible")
+
+            const lightButton = document.getElementById("light-button")
+            lightButton.classList.remove("invisible")
+            lightButton.classList.add("visible") 
+        }else{
+            const lightButton = document.getElementById("light-button")
+            lightButton.classList.remove("visible")
+            lightButton.classList.add("invisible")
+
+            const darkButton = document.getElementById("dark-button")
+            darkButton.classList.remove("invisible")
+            darkButton.classList.add("visible")
+        }
+    })
+
+    
 
     // Função que troca o tema dark para light
     function toggleThemeMode() {

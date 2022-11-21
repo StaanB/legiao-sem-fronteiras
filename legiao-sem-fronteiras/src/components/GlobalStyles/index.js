@@ -18,6 +18,71 @@ export var Colors = {
 
 // Estilização global
 export const Global = createGlobalStyle`
+    /* Estilização do mobile globalmente */
+    @media ${Media.mobile} {
+
+    width: 100%;
+    height: 100%;
+
+    .invisible{
+        display: none;
+    }
+
+    .visible{
+        display: block;
+    }
+
+    #light-button, #dark-button{
+        position: absolute;
+
+        left: 50%;
+        top: 3%;
+
+        font-size: 1.5rem;
+
+        cursor: pointer;
+    }
+
+    #light-button{
+        color: ${Colors.whiteColor};
+    }
+
+    #dark-button{
+        color: black !important;
+     }
+
+    #navbar-desktop{
+        display: none;
+     }
+    }
+    /* Estilização do Desktop globalmente */
+    @media ${Media.desktop} {
+
+        width: 100%;
+        height: 100%;
+
+    #light-button, #dark-button{
+        position: absolute;
+
+        left: 95%;
+        top: 3.5%;
+
+        font-size: 1.5rem;
+
+        color: ${Colors.whiteColor};
+        cursor: pointer;
+    }
+
+    #navbar-mobile{
+        display: none;
+    }
+    #navbar-desktop{
+        display: flex;
+    }
+    }
+
+    
+    /* Resets */
     *{
         font-family: 'Roboto', sans-serif;
 
@@ -41,6 +106,8 @@ export const Global = createGlobalStyle`
 
         transition: all 1s ease;
     }
+
+    
     /* Tema light com alterações nas classes */
     .light{
         background-color: white;
@@ -124,6 +191,25 @@ export const Global = createGlobalStyle`
             font-weight: 500;}
         }
 
+        .event-banner-section-title{
+            color: white;
+        }
+
+        .left-card-event-section{
+            color: white;
+
+            .spans-card-section{
+                span{
+                color: white;
+                }
+            }
+        }
+
+        .right-card-event-section{
+            p{color: white;
+             font-weight: 500;}
+        }
+
     }
     /* Textos no fundo */
     .background-effect{
@@ -157,6 +243,8 @@ export const Global = createGlobalStyle`
         background-color: ${Colors.bgColor};
         transform: translateY(5px);
     }
+
+    
 `
 
 

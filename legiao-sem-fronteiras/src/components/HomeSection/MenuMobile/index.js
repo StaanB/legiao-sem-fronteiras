@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 
 // Import Components
 import Container from "./style";
+import { Link } from "react-router-dom";
 
 // Import Icons
 import { VscChromeClose } from 'react-icons/vsc'
@@ -18,8 +19,8 @@ const MenuMobile = ({ menuIsVisible, setMenuIsVisible }) => {
                 <VscChromeClose size={45} onClick={() => setMenuIsVisible(false)} />
                 {/* Navbar do mobile após aberto */}
                 <nav>
-                    <a href="#home">Home</a>
-                    <a href="#event">Eventos</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/eventos">Eventos</Link>
                     <a href="#about">Sobre nós</a>
                     <a href="#contact">Contato</a>
                 </nav>
