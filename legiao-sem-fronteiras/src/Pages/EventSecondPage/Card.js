@@ -15,7 +15,7 @@ const CardEventStyled = styled.div`
     display: flex;
     flex-direction: column;
     width: 90vw;
-    height: 65vh;
+    height: 70vh;
 
     margin: auto;
     margin-top: 3rem;
@@ -75,7 +75,7 @@ const CardEventStyled = styled.div`
         p{
             width: 80%;
 
-            margin-top: 2rem;
+            margin-top: 1rem;
             font-size: .8rem;
             font-weight: 300;
 

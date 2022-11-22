@@ -100,6 +100,7 @@ height: 100vh;
     .title-btn{
         margin-top: 1rem;
         transition: all .5s ease;
+        cursor: pointer;
     }
 
     

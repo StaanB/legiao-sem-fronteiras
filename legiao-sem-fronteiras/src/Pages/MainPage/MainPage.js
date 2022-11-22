@@ -1,13 +1,15 @@
 import React from "react";
 
 // Import components
+import Button from '../../components/themeChange/Button';
 import { Global } from '../../components/GlobalStyles';
 import Navigation from '../../components/HomeSection/Navigation'
+import Herobanner from "../../components/HomeSection/Herobanner";
 import Event from '../../components/EventSection/Event';
 import About from '../../components/AboutSection/About';
+import Gallery from "../../components/GallerySection";
 import Contact from '../../components/ContactSection/Contact';
-import Button from '../../components/themeChange/Button';
-import Herobanner from "../../components/HomeSection/Herobanner";
+
 
 const MainPage = () => {
     return (
@@ -18,6 +20,7 @@ const MainPage = () => {
             <Herobanner />
             <Event />
             <About />
+            <Gallery/>
             <Contact />
         </>
     )

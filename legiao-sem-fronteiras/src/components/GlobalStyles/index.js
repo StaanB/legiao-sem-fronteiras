@@ -239,9 +239,9 @@ export const Global = createGlobalStyle`
     }
 
     .btn:hover{
-        color: ${Colors.mainColor};
-        background-color: ${Colors.bgColor};
-        transform: translateY(5px);
+        color: ${Colors.bgColor};
+        background-color: ${Colors.mainColor2};
+        transform: translateY(3px);
     }
 
     
