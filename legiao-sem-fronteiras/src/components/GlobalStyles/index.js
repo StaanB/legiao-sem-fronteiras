@@ -114,17 +114,18 @@ export const Global = createGlobalStyle`
         color: black;
 
         transition: all 1s ease;
-
+        /* Barra de navegação no tema claro */
         .navbar-links{
             a{
                 color: black;
             }
         }
-        
+        /* Titulo do herobanner no tema claro */
         .main-title{color: ${Colors.whiteColor}}
 
         .main-paragraph{color: ${Colors.whiteColor}}
        
+        /* Seção dos eventos no tema claro */
         .banner-event-container{
             background-color: gray;
             
@@ -140,10 +141,10 @@ export const Global = createGlobalStyle`
                 background-color: ${Colors.whiteColor};
             }
         }
-
+        /* Seção sobre no tema claro */
         .about-image-container{
             .medal-square{
-                background-color: gray;
+                background-color: ${Colors.bgColor};
 
                 p, span{
                     color: white;
@@ -165,10 +166,36 @@ export const Global = createGlobalStyle`
                     }
                 }
                 svg{
-                        color: white;
+                        color: ${Colors.bgColor};
                     }
             }
         }
+
+         /* Seção da Galeria no tema claro */
+
+         .galery-styled{
+            background-color: ${Colors.bgColor2};
+        }
+
+        .gallery-title-section{
+            h2{
+                color: ${Colors.whiteColor};
+            }
+
+            p{
+                color: ${Colors.whiteColor};
+            }
+        }
+
+        .gallery{
+            .image-gallery{
+                span{
+                    color: ${Colors.whiteColor};
+                }
+            }
+        }
+
+        /* Seção de contato no tema claro */
         .contact-social-medias{
             p{color: black;
             font-weight: 500;}
@@ -191,9 +218,13 @@ export const Global = createGlobalStyle`
             font-weight: 500;}
         }
 
-        .event-banner-section-title{
+        /* Outras páginas no tema claro */
+
+        .section-title{
             color: white;
         }
+
+        /* Página de eventos no tema claro */
 
         .left-card-event-section{
             color: white;
@@ -208,6 +239,27 @@ export const Global = createGlobalStyle`
         .right-card-event-section{
             p{color: white;
              font-weight: 500;}
+        }
+
+       /* Página de sobre nós no tema claro */
+
+        .history-styled{
+            background-color: ${Colors.bgColor2};
+        }
+
+        .title-history-section{
+            h2{color: white}
+            p{color: white}
+        }
+
+        .history-card{
+           .history-year-span{
+            color: ${Colors.whiteColor};
+           }
+
+           .history-year-paragraph{
+            color: ${Colors.whiteColor};
+           }
         }
 
     }

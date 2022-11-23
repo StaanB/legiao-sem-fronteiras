@@ -4,7 +4,7 @@ import { Colors, Media } from "../GlobalStyles"
 export const GalleryStyled = styled.section`
 /* Responsividade para desktop */
 @media ${Media.desktop}{
-    width: 90vw !important;
+    width: 95vw !important;
     height: 100vh;
 
     .gallery-title-section{
@@ -45,7 +45,7 @@ export const GalleryStyled = styled.section`
 
 /* Responsividade para Mobile */
 width: 90vw;
-height: 210vh;
+height: 150vh;
 
 margin: auto;
 
@@ -60,6 +60,10 @@ justify-content: space-between;
 text-align: center;
 
 background-color: ${Colors.bgColor};
+
+.image-gallery-6, .image-gallery-5{
+    display: none;
+}
 
 .gallery-title-section{
     margin: auto;

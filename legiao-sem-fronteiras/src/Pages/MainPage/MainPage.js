@@ -19,7 +19,7 @@ const MainPage = () => {
             <Navigation />
             <Herobanner />
             <Event />
-            <About />
+            <About/>
             <Gallery/>
             <Contact />
         </>

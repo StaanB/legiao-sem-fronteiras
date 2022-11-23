@@ -2,11 +2,14 @@ import React from "react"
 import { GalleryStyled } from "./style"
 import teste from "./images/teste.jpg"
 import fundo from "../HomeSection/Herobanner/images/example.png"
+import ImageGallery from "./ImageGallery"
 
 const Gallery = () => {
 
     return (
-        <GalleryStyled>
+        <GalleryStyled data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-duration="1000" className="galery-styled">
             <div className="gallery-title-section">
                 <h3>Nossa galeria</h3>
                 <h2>Fotos de nossos eventos</h2>
@@ -14,38 +17,20 @@ const Gallery = () => {
             </div>
 
             <div className="gallery" fundo={fundo}>
-                <div className="image-gallery image-gallery-1">
-                    <img src={teste} alt="primeira imagem"></img>
-                    <span className="image-text-gallery">Imagem 1</span>
-                </div>
+                <ImageGallery classe="image-gallery image-gallery-1" foto={teste} alt="primeira imagem" textoSpan="Imagem 1" />
 
-                <div className="image-gallery image-gallery-2">
-                    <img src={teste} alt="segunda imagem"></img>
-                    <span className="image-text-gallery">Imagem 2</span>
-                </div>
+                <ImageGallery classe="image-gallery image-gallery-2" foto={teste} alt="segunda imagem" textoSpan="Imagem 2" />
 
-                <div className="image-gallery image-gallery-3">
-                    <img src={teste} alt="terceira imagem"></img>
-                    <span className="image-text-gallery">Imagem 3</span>
-                </div>
+                <ImageGallery classe="image-gallery image-gallery-3" foto={teste} alt="terceira imagem" textoSpan="Imagem 3" />
 
-                <div className="image-gallery image-gallery-4">
-                    <img src={teste} alt="quarta imagem"></img>
-                    <span className="image-text-gallery">Imagem 4</span>
-                </div>
+                <ImageGallery classe="image-gallery image-gallery-4" foto={teste} alt="quarta imagem" textoSpan="Imagem 4" />
 
-                <div className="image-gallery image-gallery-5">
-                    <img src={teste} alt="quinta imagem"></img>
-                    <span className="image-text-gallery">Imagem 5</span>
-                </div>
+                <ImageGallery classe="image-gallery image-gallery-5" foto={teste} alt="quinta imagem" textoSpan="Imagem 5" />
 
-                <div className="image-gallery image-gallery-6">
-                    <img src={teste} alt="sexta imagem"></img>
-                    <span className="image-text-gallery">Imagem 6</span>
-                </div>
+                <ImageGallery classe="image-gallery image-gallery-6" foto={teste} alt="sexta imagem" textoSpan="Imagem 6" />
             </div>
 
-            <button className="btn gallery-btn">Veja mais</button>
+            <button className="btn gallery-btn" >Veja mais</button>
 
         </GalleryStyled>
     )

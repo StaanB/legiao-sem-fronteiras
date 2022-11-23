@@ -1,16 +1,30 @@
 import React from "react";
 
 import styled from "styled-components";
-import { Colors } from "../../components/GlobalStyles";
-import teste from "./images/teste2.png"
+import { Colors, Media } from "../GlobalStyles";
 
 
-const EventBannerStyled = styled.div`
+const SectionBannerStyled = styled.div`
+/* Responsividade para desktop */
+@media ${Media.desktop} {
+    width: 90vw;
 
+    h1{
+        font-size: 2.5rem !important;
+    }
+
+    span{
+        font-size: 1.2rem !important;
+    
+    }
+}
+
+/* Responsividade para mobile */
 width: 80vw;
 height: 55vh;
 margin: auto;
 margin-top: 5rem;
+margin-bottom: 5rem;
 
 background-image: url("${props => props.fundo}");
 background-position: center;
@@ -42,15 +56,15 @@ span{
 
 `
 
-const EventBanner = () => {
+const TitleSection = (props) => {
     return (
-        <EventBannerStyled className="event-banner-section-title" fundo={teste} data-aos="fade-up"
+        <SectionBannerStyled className="section-title" data-aos="fade-up" fundo={props.fundo}
             data-aos-easing="ease"
             data-aos-duration="1000">
-            <h1>Nossos Eventos</h1>
-            <span>Eventos com participação do Grupo</span>
-        </EventBannerStyled>
+            <h1>{props.titulo}</h1>
+            <span>{props.paragrafo}</span>
+        </SectionBannerStyled>
     )
 }
 
-export default EventBanner
+export default TitleSection

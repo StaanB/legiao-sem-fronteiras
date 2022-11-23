@@ -31,7 +31,10 @@ const About = () => {
             </div>
 
             {/* Seção com informações do grupo */}
-            <div className="about-title-container">
+            <div className="about-title-container" data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-duration="1000">
+
                 <h3 className="about-title">Sobre o motogrupo</h3>
 
                 <h2>Estamos em atividade desde 2021</h2>
@@ -40,7 +43,9 @@ const About = () => {
 
                 <div className="cards-section">
                     {/* Cards com informações de companheiros */}
-                    <div className="card">
+                    <div className="card" data-aos="fade-up"
+                        data-aos-easing="ease"
+                        data-aos-duration="1000">
                         <GiFullMotorcycleHelmet />
                         <div className="card-text">
                             <h3>Viaje com a gente</h3>
@@ -48,7 +53,9 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className="card">
+                    <div className="card" data-aos="fade-up"
+                        data-aos-easing="ease"
+                        data-aos-duration="1000">
                         <RiGroupFill />
                         <div className="card-text">
                             <h3>Comunidade ativa</h3>
@@ -56,7 +63,10 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className="card">
+                    <div className="card" data-aos="fade-up"
+                        data-aos-easing="ease"
+                        data-aos-duration="1000">
+                            
                         <FaHandsHelping />
                         <div className="card-text">
                             <h3>Ajuda aos membros</h3>
