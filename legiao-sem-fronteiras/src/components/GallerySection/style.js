@@ -37,7 +37,7 @@ export const GalleryStyled = styled.section`
   /* Responsividade para desktop */
   @media ${Media.desktop} {
     width: 95vw !important;
-    height: 100vh;
+    height: 85vh !important;
 
     .gallery-title-section {
       h2 {

@@ -15,7 +15,7 @@ const HerobannerStyled = styled.div`
     
     .title-container {
       width: 95% !important;
-      height: 100% !important;
+      height: 95% !important;
 
       background-repeat: no-repeat;
       background-size: cover;
