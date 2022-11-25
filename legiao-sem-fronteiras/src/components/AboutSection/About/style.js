@@ -5,6 +5,11 @@ import styled from "styled-components";
 import { Colors, Media } from "../../GlobalStyles";
 
 export const AboutStyled = styled.section`
+   /* Responsividade para MobileL */
+  @media ${Media.mobileL} {
+    height: 150vh;
+  }
+
   @media ${Media.desktop} {
     /* Responsividade para desktop */
     display: flex;
@@ -48,9 +53,10 @@ export const AboutStyled = styled.section`
       }
     }
   }
-  /* Responsividade para Mobile */
+
+  /* Responsividade para MobileS */
   width: 100vw;
-  height: 170vh;
+  height: 180vh;
 
   .about-image-container {
     display: flex;
@@ -144,11 +150,11 @@ export const AboutStyled = styled.section`
     .card {
       display: flex;
 
-      gap: 1rem;
-      margin-bottom: 1.5rem;
+      gap: 3rem;
+      margin-bottom: 3rem;
 
       svg {
-        width: 50%;
+        width: 60%;
 
         padding: 0.7rem;
         font-size: 4rem;

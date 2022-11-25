@@ -3,11 +3,11 @@ import styled from "styled-components";
 import { Colors, Media } from "../../components/GlobalStyles";
 
 export const CardEventStyled = styled.div`
-  /* Estilização para mobile */
+  /* Estilização para mobileS */
   display: flex;
   flex-direction: column;
   width: 90vw;
-  height: auto;
+  height: 75vh;
 
   margin: auto;
   margin-top: 3rem;
@@ -24,6 +24,7 @@ export const CardEventStyled = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 
     gap: 1.5rem;
 
@@ -43,7 +44,7 @@ export const CardEventStyled = styled.div`
       color: ${Colors.whiteColor};
 
       gap: 1rem;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
 
       margin-bottom: 3rem;
 
@@ -61,7 +62,7 @@ export const CardEventStyled = styled.div`
     text-align: center;
 
     img {
-      width: 15rem;
+      width: 90%;
     }
 
     p {
@@ -75,7 +76,16 @@ export const CardEventStyled = styled.div`
     }
   }
 
-  /* Desktop responsive */
+  /* Estilização para mobileL */
+  @media ${Media.mobileL} {
+    .spans-card-section{
+      font-size: 1.1rem !important;
+
+      margin-bottom: 6rem !important;
+    }
+  }
+
+  /* Estilização Desktop*/
   @media ${Media.desktop} {
     width: 80vw;
     height: 50vh;

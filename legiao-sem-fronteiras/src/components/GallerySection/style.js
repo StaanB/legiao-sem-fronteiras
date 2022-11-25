@@ -2,6 +2,38 @@ import styled from "styled-components";
 import { Colors, Media } from "../GlobalStyles";
 
 export const GalleryStyled = styled.section`
+  /* Responsividade para mobileL */
+  @media ${Media.mobileL} {
+    margin-top: 1rem !important;
+    height: 140vh !important;
+
+    .image-gallery {
+      img {
+        width: 85%;
+      }
+    }
+  }
+
+  /* Responsividade para tablet */
+  @media ${Media.tablet} {
+    height: 200vh !important;
+    
+
+    .image-gallery {
+      display: flex !important;
+      flex-direction: column !important;
+
+      img {
+        width: 80% !important;
+      }
+
+      span {
+        width: 30%;
+        margin: auto;
+      }
+    }
+  }
+
   /* Responsividade para desktop */
   @media ${Media.desktop} {
     width: 95vw !important;
@@ -42,10 +74,11 @@ export const GalleryStyled = styled.section`
     }
   }
 
-  /* Responsividade para Mobile */
+  /* Responsividade para MobileS */
   width: 90vw;
-  height: 150vh;
+  height: 170vh;
 
+  margin-top: 7rem !important;
   margin: auto;
 
   margin-top: 2rem;
@@ -85,6 +118,7 @@ export const GalleryStyled = styled.section`
     }
 
     p {
+      margin-bottom: 2rem !important;
       margin: auto;
       width: 85%;
       font-size: 0.8rem;

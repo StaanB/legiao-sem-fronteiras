@@ -3,8 +3,10 @@ import { createGlobalStyle } from "styled-components";
 
 // Responsividade
 export const Media = {
-  mobile: "(min-width: 300px)",
-  desktop: "(min-width: 1000px)",
+  mobileS: "(min-width: 300px)",
+  mobileL: "(min-width: 410px)",
+  tablet: "(min-width: 600px)",
+  desktop: "(min-width: 1024px)",
 };
 
 // Cores para o documento
@@ -19,7 +21,7 @@ export var Colors = {
 // Estilização global
 export const Global = createGlobalStyle`
     /* Estilização do mobile globalmente */
-    @media ${Media.mobile} {
+    @media ${Media.mobileS} {
 
     width: 100%;
     height: 100%;

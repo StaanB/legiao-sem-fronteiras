@@ -3,10 +3,19 @@ import styled from "styled-components";
 import { Colors, Media } from "../../GlobalStyles";
 
 const HerobannerStyled = styled.div`
+  /* Responsividade para Tablet */
+  @media ${Media.tablet} {
+    .title-container {
+      height: 70vh !important;
+    }
+  }
+
   /* Responsividade para Desktop */
   @media ${Media.desktop} {
+    
     .title-container {
       width: 95% !important;
+      height: 100% !important;
 
       background-repeat: no-repeat;
       background-size: cover;
@@ -35,7 +44,8 @@ const HerobannerStyled = styled.div`
       width: 50% !important;
     }
   }
-  /* Mobile styles */
+
+  /* responsividade para mobile */
   display: flex;
   flex-direction: column;
 
@@ -43,8 +53,12 @@ const HerobannerStyled = styled.div`
   height: 100vh;
 
   .title-container {
+    justify-content: center;
+
     background-image: url("${(props) => props.mainImage}");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     display: flex;
     flex-direction: column;
