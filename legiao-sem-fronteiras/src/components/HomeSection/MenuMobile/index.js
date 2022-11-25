@@ -6,30 +6,28 @@ import Container from "./style";
 import { Link } from "react-router-dom";
 
 // Import Icons
-import { VscChromeClose } from 'react-icons/vsc'
+import { VscChromeClose } from "react-icons/vsc";
 
 const MenuMobile = ({ menuIsVisible, setMenuIsVisible }) => {
-    // Efeito para deixar menu mobile invisivel
-    useEffect(() => {
-        document.body.style.overflowY = menuIsVisible ? 'hidden' : 'auto'
-    }, [menuIsVisible])
-    return (
-        <>
-            <Container isVisible={menuIsVisible}>
-                <VscChromeClose size={45} onClick={() => setMenuIsVisible(false)} />
-                {/* Navbar do mobile após aberto */}
-                <nav>
-                    <Link to="/">Home</Link>
-                    <Link to="/eventos">Eventos</Link>
-                    <Link to="/sobre">Sobre nós</Link>
-                    <a href="#Galery ">Galeria</a>
-                    <a href="#contact">Contato</a>
-                </nav>
+  // Efeito para deixar menu mobile invisivel
+  useEffect(() => {
+    document.body.style.overflowY = menuIsVisible ? "hidden" : "auto";
+  }, [menuIsVisible]);
+  return (
+    <>
+      <Container isVisible={menuIsVisible}>
+        <VscChromeClose size={45} onClick={() => setMenuIsVisible(false)} />
+        {/* Navbar do mobile após aberto */}
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/eventos">Eventos</Link>
+          <Link to="/sobre">Sobre nós</Link>
+          <a href="#Galery ">Galeria</a>
+          <a href="#contact">Contato</a>
+        </nav>
+      </Container>
+    </>
+  );
+};
 
-            </Container>
-        </>
-    )
-}
-
-
-export default MenuMobile
+export default MenuMobile;

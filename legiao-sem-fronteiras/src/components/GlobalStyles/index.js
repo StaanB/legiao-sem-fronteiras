@@ -3,18 +3,18 @@ import { createGlobalStyle } from "styled-components";
 
 // Responsividade
 export const Media = {
-    mobile: '(min-width: 300px)',
-    desktop: '(min-width: 1000px)'
-}
+  mobile: "(min-width: 300px)",
+  desktop: "(min-width: 1000px)",
+};
 
 // Cores para o documento
 export var Colors = {
-    bgColor: "#111",
-    bgColor2: 'gray',
-    mainColor: '#E3C63B',
-    mainColor2: '#F0AA32',
-    whiteColor: 'white'
-}
+  bgColor: "#111",
+  bgColor2: "gray",
+  mainColor: "#E3C63B",
+  mainColor2: "#F0AA32",
+  whiteColor: "white",
+};
 
 // Estilização global
 export const Global = createGlobalStyle`
@@ -297,6 +297,4 @@ export const Global = createGlobalStyle`
     }
 
     
-`
-
-
+`;

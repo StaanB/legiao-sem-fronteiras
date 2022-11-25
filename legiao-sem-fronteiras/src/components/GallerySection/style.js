@@ -1,148 +1,137 @@
-import styled from "styled-components"
-import { Colors, Media } from "../GlobalStyles"
+import styled from "styled-components";
+import { Colors, Media } from "../GlobalStyles";
 
 export const GalleryStyled = styled.section`
-/* Responsividade para desktop */
-@media ${Media.desktop}{
+  /* Responsividade para desktop */
+  @media ${Media.desktop} {
     width: 95vw !important;
     height: 100vh;
 
-    .gallery-title-section{
-        h2{
-            font-size: 2rem !important;
-        }
+    .gallery-title-section {
+      h2 {
+        font-size: 2rem !important;
+      }
 
-        p{
-            width: 60% !important;
-            font-size: .9rem !important;
-        }
+      p {
+        width: 60% !important;
+        font-size: 0.9rem !important;
+      }
     }
-    .gallery{
-        height: 50%;
-        grid-template-columns: 60% 20% 20% !important;
-        grid-template-rows: 60% 40% !important;
-        
+    .gallery {
+      height: 50%;
+      grid-template-columns: 60% 20% 20% !important;
+      grid-template-rows: 60% 40% !important;
 
-        .image-gallery{
-            display: flex;
-            flex-direction: column;
-            img{
-                width: 80%;
-                height: 90%;
-            }
-            span{
-                width: 30%;
-                margin: auto;
-                bottom: 20% !important;
-            }
+      .image-gallery {
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 80%;
+          height: 90%;
         }
+        span {
+          width: 30%;
+          margin: auto;
+          bottom: 20% !important;
+        }
+      }
     }
 
-    .gallery-btn{
-        width: 10% !important;
+    .gallery-btn {
+      width: 10% !important;
     }
-}
+  }
 
-/* Responsividade para Mobile */
-width: 90vw;
-height: 150vh;
+  /* Responsividade para Mobile */
+  width: 90vw;
+  height: 150vh;
 
-margin: auto;
+  margin: auto;
 
-margin-top: 2rem;
-margin-bottom: 2rem;
-padding: 5px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 5px;
 
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
-text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
 
-background-color: ${Colors.bgColor};
+  background-color: ${Colors.bgColor};
 
-.image-gallery-6, .image-gallery-5{
+  .image-gallery-6,
+  .image-gallery-5 {
     display: none;
-}
+  }
 
-.gallery-title-section{
+  .gallery-title-section {
     margin: auto;
     display: flex;
     flex-direction: column;
 
-    h3{
-        color: ${Colors.mainColor};
-        text-transform: uppercase;
-        font-size: .8rem;
+    h3 {
+      color: ${Colors.mainColor};
+      text-transform: uppercase;
+      font-size: 0.8rem;
 
-        margin-bottom: .8rem;
+      margin-bottom: 0.8rem;
     }
 
-    h2{
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        margin-bottom: 3rem;
+    h2 {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
     }
 
-    p{
-        margin: auto;
-        width: 85%;
-        font-size: .8rem;
-        font-weight: 300;
-        color: ${Colors.bgColor2};
+    p {
+      margin: auto;
+      width: 85%;
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: ${Colors.bgColor2};
     }
+  }
 
-
-    
-}
-
-
-
-
-.gallery{
+  .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    
-    
-    gap: .5rem;
 
-    .image-gallery{
-        img{
-            max-width: 90%;
-            height: 80%;
+    gap: 0.5rem;
 
-            object-fit: cover;
+    .image-gallery {
+      img {
+        max-width: 90%;
+        height: 80%;
 
-            transition: all .5s;
-            -moz-transition: all .5s;
-            -webkit-transition: all .5s;
-            
-            margin: auto;
-        }
+        object-fit: cover;
 
-        img:hover{
-            transform: scale(1.05);
-        }
+        transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
 
-        span{
-            position: relative;
-            bottom: 20%;
-            background-color: rgba(0, 0, 0, .5);
-            padding: .2rem;
-        }
-        
-    }
-
- 
-}
-
-.gallery-btn{
-        width: 50%;
         margin: auto;
-        margin-bottom: 1rem;
-        transition: all .5s ease;
+      }
 
-        cursor: pointer;
+      img:hover {
+        transform: scale(1.05);
+      }
+
+      span {
+        position: relative;
+        bottom: 20%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 0.2rem;
+      }
     }
+  }
 
-`
+  .gallery-btn {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+    transition: all 0.5s ease;
+
+    cursor: pointer;
+  }
+`;
