@@ -26,7 +26,7 @@ const Navbar = ({ setMenuIsVisible }) => {
         {/* Parte Esquerda da Navbar */}
         <div className="navbar-links">
           <Link to="/sobre">Sobre nós</Link>
-          <a href="#galerry">Galeria</a>
+          <Link to="/galeria">Galeria</Link>
           <a href="#contact">Contato</a>
         </div>
       </NavBarStyledDesktop>

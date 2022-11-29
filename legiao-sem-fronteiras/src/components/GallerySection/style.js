@@ -71,6 +71,7 @@ export const GalleryStyled = styled.section`
 
     .gallery-btn {
       width: 10% !important;
+      font-size: .9rem;
     }
   }
 

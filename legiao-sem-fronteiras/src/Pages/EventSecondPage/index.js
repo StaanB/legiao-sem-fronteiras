@@ -23,6 +23,9 @@ const EventSecondPage = () => {
         titulo="Eventos do motogrupo"
         paragrafo="Eventos com participação do legião"
         fundo={teste2}
+        data-aos="fade-up"
+        data-aos-easing="ease"
+        data-aos-duration="1000"
       />
 
       <Card

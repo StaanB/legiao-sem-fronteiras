@@ -22,7 +22,7 @@ const MenuMobile = ({ menuIsVisible, setMenuIsVisible }) => {
           <Link to="/">Home</Link>
           <Link to="/eventos">Eventos</Link>
           <Link to="/sobre">Sobre nós</Link>
-          <a href="#Galery ">Galeria</a>
+          <Link to="/galeria">Galeria</Link>
           <a href="#contact">Contato</a>
         </nav>
       </Container>

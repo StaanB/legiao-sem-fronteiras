@@ -22,6 +22,9 @@ const AboutPage = () => {
         titulo="Sobre o motogrupo"
         paragrafo="Um pouco da história do Legião sem Fronteiras e sobre a organização."
         fundo={legiaoBg}
+        data-aos="fade-up"
+        data-aos-easing="ease"
+        data-aos-duration="1000"
       />
       <About />
       <History />

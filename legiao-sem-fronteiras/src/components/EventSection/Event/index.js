@@ -12,6 +12,7 @@ import { MdAccessTime } from "react-icons/md";
 // Import Components
 import { timer } from "./timer.js";
 
+
 timer();
 
 const Banner = () => {

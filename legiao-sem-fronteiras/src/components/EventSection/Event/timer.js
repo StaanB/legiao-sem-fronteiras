@@ -11,21 +11,25 @@ export function timer() {
       minutos = Math.floor(diferenca / 1000 / 60) % 60,
       segundos = Math.floor(diferenca / 1000) % 60;
 
-    document.querySelector(
-      "#timer-dias"
-    ).innerHTML = `<li id="timer-dias">${dias}<span>dias</span></li>`;
+     try{
+      document.querySelector(
+        "#timer-dias"
+      ).innerHTML = `<li id="timer-dias">${dias}<span>dias</span></li>`;
+  
+      document.querySelector(
+        "#timer-horas"
+      ).innerHTML = `<li id="timer-horas">${horas}<span>horas</span></li>`;
+  
+      document.querySelector(
+        "#timer-minutos"
+      ).innerHTML = `<li id="timer-minutos">${minutos}<span>minutos</span></li>`;
+  
+      document.querySelector(
+        "#timer-segundos"
+      ).innerHTML = `<li id="timer-segundos">${segundos}<span>segundos</span></li>`;
+     }catch(err){}
 
-    document.querySelector(
-      "#timer-horas"
-    ).innerHTML = `<li id="timer-horas">${horas}<span>horas</span></li>`;
-
-    document.querySelector(
-      "#timer-minutos"
-    ).innerHTML = `<li id="timer-minutos">${minutos}<span>minutos</span></li>`;
-
-    document.querySelector(
-      "#timer-segundos"
-    ).innerHTML = `<li id="timer-segundos">${segundos}<span>segundos</span></li>`;
+    
   }
 
   let intervalo = setInterval(atualizar, 1000);

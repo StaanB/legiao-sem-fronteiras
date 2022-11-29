@@ -3,6 +3,7 @@ import { GalleryStyled } from "./style";
 import teste from "./images/teste.jpg";
 import fundo from "../HomeSection/Herobanner/images/example.png";
 import ImageGallery from "./ImageGallery";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
   return (
@@ -66,7 +67,7 @@ const Gallery = () => {
         />
       </div>
 
-      <button className="btn gallery-btn">Veja mais</button>
+      <Link to="/galeria" className="btn gallery-btn">Veja mais</Link>
     </GalleryStyled>
   );
 };
