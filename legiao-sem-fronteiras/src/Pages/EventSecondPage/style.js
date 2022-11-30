@@ -42,6 +42,7 @@ export const CardEventStyled = styled.div`
       justify-content: space-between;
 
       color: ${Colors.whiteColor};
+      font-weight: 300;
 
       gap: 1rem;
       font-size: 0.9rem;
@@ -113,7 +114,7 @@ export const CardEventStyled = styled.div`
         gap: 3rem;
 
         width: 80%;
-        font-size: 1.2rem;
+        font-size: 1rem !important;
       }
     }
 

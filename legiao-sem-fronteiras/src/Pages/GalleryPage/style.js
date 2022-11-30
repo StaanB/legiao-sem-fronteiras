@@ -4,7 +4,7 @@ import { Colors, Media } from "../../components/GlobalStyles";
 export const GridStyled = styled.div`
   /* Responsividade para Desktop */
   @media ${Media.desktop} {
-    
+    height: 100vh !important;
 
     h2 {
       font-size: 2rem;
@@ -40,7 +40,6 @@ export const GridStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
 
   h2 {

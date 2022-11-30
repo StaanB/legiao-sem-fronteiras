@@ -27,7 +27,7 @@ const Navbar = ({ setMenuIsVisible }) => {
         <div className="navbar-links">
           <Link to="/sobre">Sobre nós</Link>
           <Link to="/galeria">Galeria</Link>
-          <a href="#contact">Contato</a>
+          <Link to="/contato">Contato</Link>
         </div>
       </NavBarStyledDesktop>
 

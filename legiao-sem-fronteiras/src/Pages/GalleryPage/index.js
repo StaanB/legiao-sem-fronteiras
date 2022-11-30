@@ -5,6 +5,7 @@ import { Global } from "../../components/GlobalStyles";
 import Button from "../../components/themeChange/Button";
 import Navigation from "../../components/HomeSection/Navigation";
 import TitleSection from "../../components/TitleSections/TitleSections";
+import Contact from "../../components/ContactSection/Contact";
 
 // Import Styles
 import legiaoBg from "./images/legiao-title-bg.png";
@@ -40,6 +41,7 @@ const GalleryPage = () => {
         foto4={foto4}
         foto5={foto5}
       />
+      <Contact />
     </>
   );
 };

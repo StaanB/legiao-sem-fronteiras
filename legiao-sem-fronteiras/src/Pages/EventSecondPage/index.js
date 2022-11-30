@@ -6,11 +6,13 @@ import { Global } from "../../components/GlobalStyles";
 import teste from "./images/teste.jpg";
 import teste2 from "./images/teste2.png";
 
-// Importando seções
+// Importando Components
 import Navigation from "../../components/HomeSection/Navigation";
 import Button from "../../components/themeChange/Button";
 import TitleSection from "../../components/TitleSections/TitleSections";
 import Card from "./Card";
+import Contact from '../../components/ContactSection/Contact';
+
 
 const EventSecondPage = () => {
   return (
@@ -36,6 +38,7 @@ const EventSecondPage = () => {
         imagem={teste}
         descricao="Moto capital que ira ocorrer em Salvador reunindo vários motogrupos em todos os lugares."
       />
+      <Contact />
     </>
   );
 };

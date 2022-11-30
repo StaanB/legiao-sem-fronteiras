@@ -97,7 +97,7 @@ export const ContactStyled = styled.section`
       font-size: 3rem;
       padding: 0.6rem;
 
-      border: 1px solid ${Colors.bgColor2};
+      border: 1px solid ${Colors.mainColor};
       color: ${Colors.mainColor};
 
       transition: 0.3s;
@@ -109,7 +109,7 @@ export const ContactStyled = styled.section`
       color: ${Colors.bgColor};
       background-color: ${Colors.mainColor};
 
-      font-size: 2.8rem;
+      transform: scale(0.9);
 
       transition: all 0.5s ease;
     }
