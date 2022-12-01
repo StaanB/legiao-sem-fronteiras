@@ -10,9 +10,9 @@ export const GridStyled = styled.div`
       font-size: 2rem;
     }
 
-    .grid-template{
-       grid-template-columns: repeat(6, 1fr);
-       grid-auto-rows: 100%;
+    .grid-template {
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: 100%;
     }
 
     .h1 {

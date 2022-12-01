@@ -12,7 +12,6 @@ const HerobannerStyled = styled.div`
 
   /* Responsividade para Desktop */
   @media ${Media.desktop} {
-    
     .title-container {
       width: 95% !important;
       height: 95% !important;

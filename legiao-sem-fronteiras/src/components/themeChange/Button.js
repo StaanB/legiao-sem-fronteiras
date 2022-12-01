@@ -1,4 +1,4 @@
-// Import utilites
+// Import React
 import React, { useEffect, useState } from "react";
 
 // Import Icons

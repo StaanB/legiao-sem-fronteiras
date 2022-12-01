@@ -1,5 +1,7 @@
+// Import React
 import React from "react";
 
+// Import Styles
 import styled from "styled-components";
 import { Colors, Media } from "../GlobalStyles";
 
@@ -51,6 +53,7 @@ const SectionBannerStyled = styled.div`
   }
 `;
 
+// titulo da seção de cada página padrão
 const TitleSection = (props) => {
   return (
     <SectionBannerStyled

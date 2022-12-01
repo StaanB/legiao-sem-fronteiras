@@ -6,7 +6,10 @@ import HistoryCards from "./HistoryCards";
 
 // Import Styles
 import { HistoryStyled } from "./style";
-import example from "./images/legiao-title-bg.png";
+import historyPic1 from "./images/about-page-banner.png";
+import historyPic2 from "./images/about-page-banner.png";
+import historyPic3 from "./images/about-page-banner.png";
+
 
 const History = () => {
   return (
@@ -18,27 +21,26 @@ const History = () => {
     >
       <div className="title-history-section">
         <h3>História</h3>
-        <h2>Nossa História</h2>
+        <h2>História do Legião sem fronteiras</h2>
         <p>
-          Acontecimento importante em 2021 onde fizemos coisa x e coisa y que
-          foi muito importante para fundação do grupo
+          Legião sem Fronteiras foi marcado por muitas coisas desde a sua fundação, veja algumas delas em retrospectiva.
         </p>
       </div>
 
       <HistoryCards
-        imagem={example}
+        imagem={historyPic1}
         ano="2021"
         paragrafo="Acontecimento importante em 2021 onde fizemos coisa x e coisa y que foi muito importante para fundação do grupo"
       />
 
       <HistoryCards
-        imagem={example}
+        imagem={historyPic2}
         ano="2021"
         paragrafo="Acontecimento importante em 2021 onde fizemos coisa x e coisa y que foi muito importante para fundação do grupo"
       />
 
       <HistoryCards
-        imagem={example}
+        imagem={historyPic3}
         ano="2021"
         paragrafo="Acontecimento importante em 2021 onde fizemos coisa x e coisa y que foi muito importante para fundação do grupo"
       />

@@ -1,4 +1,4 @@
-// Import utilities
+// Import React
 import React from "react";
 
 // Import Style
@@ -11,7 +11,6 @@ import { MdAccessTime } from "react-icons/md";
 
 // Import Components
 import { timer } from "./timer.js";
-
 
 timer();
 
@@ -26,29 +25,28 @@ const Banner = () => {
       >
         {/* Lado esquerdo do banner com informações do evento */}
         <div className="banner-title" id="event">
-          <h2>independence day ride 2022</h2>
+          <h2>Moto capital em Salvador</h2>
 
           <h3 className="background-banner-text background-effect">Evento</h3>
 
           <ul className="banner-icons">
             <li>
-              <IoIosPin /> MT. Batur - Kintamoni
+              <IoIosPin /> Praia de Piatã
             </li>
 
             <li>
               <BsFillCalendarCheckFill />
-              17 de Agosto de 2022
+              01 de dezembro de 2022 
             </li>
 
             <li>
               <MdAccessTime />
-              07:00
+              08:00
             </li>
           </ul>
 
           <p className="event-main-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna
+            Moto capital com bandas e muitas atrações com participação do Legião e amigos.
           </p>
         </div>
 

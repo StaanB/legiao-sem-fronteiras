@@ -79,7 +79,7 @@ export const CardEventStyled = styled.div`
 
   /* Estilização para mobileL */
   @media ${Media.mobileL} {
-    .spans-card-section{
+    .spans-card-section {
       font-size: 1.1rem !important;
 
       margin-bottom: 6rem !important;

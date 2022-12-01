@@ -1,18 +1,17 @@
-// Import utilites
+// Import React
 import React from "react";
 
-// Importando Estilos
+// Importando styles
 import { Global } from "../../components/GlobalStyles";
 import teste from "./images/teste.jpg";
-import teste2 from "./images/teste2.png";
+import fundoTitulo from "./images/event-banner-image.png";
 
 // Importando Components
 import Navigation from "../../components/HomeSection/Navigation";
 import Button from "../../components/themeChange/Button";
 import TitleSection from "../../components/TitleSections/TitleSections";
 import Card from "./Card";
-import Contact from '../../components/ContactSection/Contact';
-
+import Contact from "../../components/ContactSection/Contact";
 
 const EventSecondPage = () => {
   return (
@@ -22,9 +21,9 @@ const EventSecondPage = () => {
       <Navigation />
 
       <TitleSection
-        titulo="Eventos do motogrupo"
-        paragrafo="Eventos com participação do legião"
-        fundo={teste2}
+        titulo="Eventos com Legião Sem Fronteiras"
+        paragrafo="Fique por dentro de todos os eventos que o Legião estará presente esse ano!"
+        fundo={fundoTitulo}
         data-aos="fade-up"
         data-aos-easing="ease"
         data-aos-duration="1000"
@@ -32,11 +31,11 @@ const EventSecondPage = () => {
 
       <Card
         titulo="Moto capital em Salvador"
-        local="Salvador-Ba ponto de encontro no posto"
-        data="07/08/2022"
+        local="Salvador-BA ponto de encontro no posto"
+        data="02/12/2022"
         hora="08:00 da manhã"
         imagem={teste}
-        descricao="Moto capital que ira ocorrer em Salvador reunindo vários motogrupos em todos os lugares."
+        descricao="Moto capital que irá ocorrer em Salvador reunindo vários motogrupos em todos os lugares."
       />
       <Contact />
     </>

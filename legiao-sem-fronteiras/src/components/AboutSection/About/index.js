@@ -1,7 +1,7 @@
-// Import utilities
+// Import React
 import React from "react";
 
-// Import styles
+// Import Styles
 import { AboutStyled } from "./style";
 import lucio from "./images/lucio.jpg";
 

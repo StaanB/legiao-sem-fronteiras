@@ -1,18 +1,21 @@
-// Import utilities
+// Import React
 import React from "react";
 
 // Import Style
 import HerobannerStyled from "./style";
 
 // Import Images
-import mainImage from "./images/example.png";
+import heroBannerImage from "./images/legiao-herobanner-photo.png";
+
+// React Router
+import { Link } from "react-router-dom";
 
 const Herobanner = () => {
   return (
     <>
       <HerobannerStyled
         id="home"
-        mainImage={mainImage}
+        mainImage={heroBannerImage}
         data-aos="fade-up"
         data-aos-easing="ease"
         data-aos-duration="1000"
@@ -35,10 +38,10 @@ const Herobanner = () => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat Duis aute irure dolor
           </p>
-
-          <a href="#contact">
+          {/* Botão para seção de contato */}
+          <Link to="/contato">
             <button className="btn title-btn">Fale conosco</button>
-          </a>
+          </Link>
         </div>
       </HerobannerStyled>
     </>

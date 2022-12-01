@@ -1,36 +1,6 @@
 // Import Styles
 import styled from "styled-components";
-
-// Import Utilities
 import { Colors } from "../../GlobalStyles";
-
-export const NavbarStyledMobile = styled.nav`
-  /* Estilização da Navbar Mobile */
-  height: 4rem;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
-  img {
-    margin-top: 2rem;
-    margin-left: 1rem;
-
-    border-radius: 10rem;
-    border: 2px solid ${Colors.mainColor};
-    width: 5rem;
-
-    z-index: 0;
-  }
-
-  .hamburguer-menu {
-    color: ${Colors.mainColor};
-
-    margin: 1rem;
-    font-size: 2rem;
-  }
-`;
 
 export const NavBarStyledDesktop = styled.nav`
   /*Estilização da Navbar Desktop  */
@@ -73,5 +43,33 @@ export const NavBarStyledDesktop = styled.nav`
     a:hover {
       color: ${Colors.mainColor};
     }
+  }
+`;
+
+export const NavbarStyledMobile = styled.nav`
+  /* Estilização da Navbar Mobile */
+  height: 4rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    margin-top: 2rem;
+    margin-left: 1rem;
+
+    border-radius: 10rem;
+    border: 2px solid ${Colors.mainColor};
+    width: 5rem;
+
+    z-index: 0;
+  }
+
+  .hamburguer-menu {
+    color: ${Colors.mainColor};
+
+    margin: 1rem;
+    font-size: 2rem;
   }
 `;

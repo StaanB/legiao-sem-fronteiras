@@ -1,5 +1,5 @@
 // Import utilities
-import React from "react";
+import React, { useState } from "react";
 import { ContactEmailStyled } from "./style";
 import { SendEmailFirebase } from "./FirebaseSubmit";
 
@@ -43,18 +43,26 @@ const ContactEmail = () => {
           emails.
         </p>
 
-        <input type="text" id="username" placeholder="Nome" autoComplete="on" />
+        <input
+          type="text"
+          id="username"
+          placeholder="Nome"
+          autoComplete="on"
+          className="user-input"
+        />
         <input
           type="email"
           id="useremail"
           placeholder="Email"
           autoComplete="on"
+          className="user-input"
           required
         />
         <textarea
           id="usermessage"
           placeholder="Mensagem"
           autoComplete="on"
+          className="user-input"
           required
         ></textarea>
         <input type="submit" id="submit-button" />

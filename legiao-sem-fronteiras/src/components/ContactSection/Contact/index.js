@@ -1,4 +1,4 @@
-// import utilities
+// import React
 import React from "react";
 
 // Import Styles
@@ -24,8 +24,7 @@ const Contact = () => {
       <div className="contact-social-medias">
         <img src={legiaoLogo} alt="legião logo"></img>
         <p>
-          Sed ut perspiciatis unde omnis iste natus delavirot voluptatem
-          accusantium doloremque.
+          Qualquer dúvida pode entrar em contato através de nossas redes sociais abaixo.
         </p>
 
         <div className="social-medias-icons">
@@ -54,7 +53,7 @@ const Contact = () => {
       <div className="contact-consult-area">
         <div className="number-icon">
           <BsFillTelephoneFill />
-          <span>71 9 9999-9999</span>
+          <span>(71) 9 9999-9999</span>
         </div>
 
         <div className="contact-information-card">
@@ -64,7 +63,7 @@ const Contact = () => {
 
         <div className="contact-information-card">
           <HiLocationMarker />
-          <p>Jln Raya Kuta No 25, Kuta bali</p>
+          <p>Endereço a ser colocado em breve.</p>
         </div>
       </div>
 

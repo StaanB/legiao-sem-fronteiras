@@ -1,4 +1,4 @@
-// Import utilites
+// Import React
 import React, { useState } from "react";
 
 // Import Components

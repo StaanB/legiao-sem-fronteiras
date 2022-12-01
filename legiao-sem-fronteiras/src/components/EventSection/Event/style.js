@@ -96,10 +96,14 @@ export const BannerStyled = styled.div`
       margin-bottom: 1rem;
 
       li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        gap: .5rem;
         margin-bottom: 0.5rem;
         svg {
           font-size: 1.2rem;
-          margin-right: 0.5rem;
           color: ${Colors.mainColor};
         }
       }

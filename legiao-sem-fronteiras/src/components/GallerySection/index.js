@@ -1,9 +1,19 @@
+// Import React
 import React from "react";
-import { GalleryStyled } from "./style";
-import teste from "./images/teste.jpg";
-import fundo from "../HomeSection/Herobanner/images/example.png";
-import ImageGallery from "./ImageGallery";
 import { Link } from "react-router-dom";
+
+// Import Style and Images
+import { GalleryStyled } from "./style";
+
+import galeria1 from "./images/galeria-legiao-1.jpg"
+import galeria2 from "./images/galeria-legiao-2.jpg"
+import galeria3 from "./images/galeria-legiao-3.jpg"
+import galeria4 from "./images/galeria-legiao-4.jpg"
+import galeria5 from "./images/galeria-legiao-5.jpg"
+import galeria6 from "./images/galeria-legiao-6.jpg"
+
+// Import Components
+import ImageGallery from "./ImageGallery";
 
 const Gallery = () => {
   return (
@@ -17,57 +27,57 @@ const Gallery = () => {
         <h3>Nossa galeria</h3>
         <h2>Fotos de nossos eventos</h2>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s,{" "}
+          Os membros do Legião sempre estão presentes nos eventos, veja alguns que participamos.
         </p>
       </div>
 
-      <div className="gallery" fundo={fundo}>
+      <div className="gallery">
         <ImageGallery
           classe="image-gallery image-gallery-1"
-          foto={teste}
+          foto={galeria1}
           alt="primeira imagem"
-          textoSpan="Imagem 1"
+          textoSpan="Barra de Itariri"
         />
 
         <ImageGallery
           classe="image-gallery image-gallery-2"
-          foto={teste}
+          foto={galeria2}
           alt="segunda imagem"
-          textoSpan="Imagem 2"
+          textoSpan="Barra de Itariri"
         />
 
         <ImageGallery
           classe="image-gallery image-gallery-3"
-          foto={teste}
+          foto={galeria3}
           alt="terceira imagem"
-          textoSpan="Imagem 3"
+          textoSpan=""
         />
 
         <ImageGallery
           classe="image-gallery image-gallery-4"
-          foto={teste}
+          foto={galeria4}
           alt="quarta imagem"
-          textoSpan="Imagem 4"
+          textoSpan="Ação social"
         />
 
         <ImageGallery
           classe="image-gallery image-gallery-5"
-          foto={teste}
+          foto={galeria5}
           alt="quinta imagem"
-          textoSpan="Imagem 5"
+          textoSpan="Apoio aos irmãos"
         />
 
         <ImageGallery
           classe="image-gallery image-gallery-6"
-          foto={teste}
+          foto={galeria6}
           alt="sexta imagem"
-          textoSpan="Imagem 6"
+          textoSpan="Sede Legião & Wolf"
         />
       </div>
 
-      <Link to="/galeria" className="btn gallery-btn">Veja mais</Link>
+      <Link to="/galeria" className="btn gallery-btn">
+        Veja mais
+      </Link>
     </GalleryStyled>
   );
 };

@@ -17,7 +17,6 @@ export const GalleryStyled = styled.section`
   /* Responsividade para tablet */
   @media ${Media.tablet} {
     height: 200vh !important;
-    
 
     .image-gallery {
       display: flex !important;
@@ -52,7 +51,7 @@ export const GalleryStyled = styled.section`
     .gallery {
       height: 50%;
       grid-template-columns: 60% 20% 20% !important;
-      grid-template-rows: 60% 40% !important;
+      grid-template-rows: 50% 50% !important;
 
       .image-gallery {
         display: flex;
@@ -62,7 +61,7 @@ export const GalleryStyled = styled.section`
           height: 90%;
         }
         span {
-          width: 30%;
+          width: 70%;
           margin: auto;
           bottom: 20% !important;
         }
@@ -71,7 +70,7 @@ export const GalleryStyled = styled.section`
 
     .gallery-btn {
       width: 10% !important;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 
@@ -155,7 +154,7 @@ export const GalleryStyled = styled.section`
       span {
         position: relative;
         bottom: 20%;
-        background-color: rgba(0, 0, 0, 0.5);
+        text-shadow: 2px 2px 2px black;
         padding: 0.2rem;
       }
     }

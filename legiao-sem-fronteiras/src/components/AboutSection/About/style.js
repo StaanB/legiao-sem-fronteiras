@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { Colors, Media } from "../../GlobalStyles";
 
 export const AboutStyled = styled.section`
-   /* Responsividade para MobileL */
+  /* Responsividade para MobileL */
   @media ${Media.mobileL} {
     height: 150vh;
   }
@@ -15,7 +15,7 @@ export const AboutStyled = styled.section`
     display: flex;
     flex-direction: row;
 
-    gap: 9rem;
+    gap: 4rem;
     height: 100vh !important;
     margin-top: 1rem;
 

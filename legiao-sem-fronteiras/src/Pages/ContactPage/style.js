@@ -11,32 +11,31 @@ export const ContactEmailStyled = styled.div`
 
     margin-bottom: 6rem !important;
 
-    .contact-social-medias{
-        width: 50%;
-        height: auto;
+    .contact-social-medias {
+      width: 50%;
+      height: auto;
 
-        h3{
-            font-size: .9rem !important;
+      h3 {
+        font-size: 0.9rem !important;
+      }
+
+      h2 {
+        font-size: 2rem !important;
+      }
+
+      .social-media-contact-page {
+        height: 100%;
+        justify-content: space-around !important;
+
+        svg {
+          font-size: 4rem !important;
         }
-
-        h2{
-            font-size: 2rem !important;
-        }
-
-        .social-media-contact-page{
-            height: 100%;
-            justify-content: space-around !important;
-
-            svg{
-                font-size: 4rem !important;
-            }
-        }
+      }
     }
 
-    form{
-        width: 30%;
+    form {
+      width: 30%;
     }
-
   }
 
   /* Responsividade para MobileS */

@@ -3,9 +3,6 @@ import React from "react";
 // Import styles
 import { GridStyled } from "./style";
 
-// import images
-import imageExample from "./images/legiao-title-bg.png";
-
 const GridSection = ({
   tituloEvento,
   paragrafoEvento,

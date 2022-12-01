@@ -1,4 +1,3 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
@@ -25,16 +24,19 @@ export async function SendEmailFirebase(e) {
   var nome = document.querySelector("#username").value;
   var email = document.querySelector("#useremail").value;
   var message = document.querySelector("#usermessage").value;
-  console.log(nome, email, message);
 
   try {
     const docRef = await addDoc(collection(db, "emails"), {
       nome: nome,
       email: email,
-      message: message
+      message: message,
     });
 
-    alert("Seu email foi mandado com sucesso.")
+    Array.from(document.querySelectorAll(".user-input")).forEach(
+      (input) => (input.value = "")
+    );
+
+    alert("Seu email foi mandado com sucesso.");
   } catch (e) {
     console.error("Error adding document: ", e);
   }
