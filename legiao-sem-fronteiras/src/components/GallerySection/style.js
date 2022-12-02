@@ -2,41 +2,9 @@ import styled from "styled-components";
 import { Colors, Media } from "../GlobalStyles";
 
 export const GalleryStyled = styled.section`
-  /* Responsividade para mobileL */
-  @media ${Media.mobileL} {
-    margin-top: 1rem !important;
-    height: 140vh !important;
-
-    .image-gallery {
-      img {
-        width: 85%;
-      }
-    }
-  }
-
-  /* Responsividade para tablet */
-  @media ${Media.tablet} {
-    height: 200vh !important;
-
-    .image-gallery {
-      display: flex !important;
-      flex-direction: column !important;
-
-      img {
-        width: 80% !important;
-      }
-
-      span {
-        width: 30%;
-        margin: auto;
-      }
-    }
-  }
-
   /* Responsividade para desktop */
   @media ${Media.desktop} {
     width: 95vw !important;
-    height: 85vh !important;
 
     .gallery-title-section {
       h2 {
@@ -49,21 +17,47 @@ export const GalleryStyled = styled.section`
       }
     }
     .gallery {
-      height: 50%;
-      grid-template-columns: 60% 20% 20% !important;
-      grid-template-rows: 50% 50% !important;
+      width: 95%;
+      height: 90%;
+      margin: auto;
+
+      display: grid !important;
+      gap: none !important;
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: 300px;
+
+
+      .image-gallery-1{
+        grid-row: span 1;
+        grid-column: span 3;
+      }
+
+      .image-gallery-2{
+        grid-row: span 1;
+        grid-column: span 3;
+      }
+
+      .image-gallery-3{
+        grid-row: span 1;
+        grid-column: span 2;
+      }
+
+      .image-gallery-6{
+        grid-row: span 1;
+        grid-column: span 2;
+      }
 
       .image-gallery {
         display: flex;
         flex-direction: column;
         img {
-          width: 80%;
+          width: 90%;
           height: 90%;
+          object-fit: cover !important;
         }
         span {
           width: 70%;
-          margin: auto;
-          bottom: 20% !important;
+          left: 10%;
         }
       }
     }
@@ -76,7 +70,7 @@ export const GalleryStyled = styled.section`
 
   /* Responsividade para MobileS */
   width: 90vw;
-  height: 170vh;
+  height: auto;
 
   margin-top: 7rem !important;
   margin: auto;
@@ -128,23 +122,18 @@ export const GalleryStyled = styled.section`
   }
 
   .gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-
+    display: flex;
+    flex-direction: column;
     gap: 0.5rem;
 
     .image-gallery {
       img {
-        max-width: 90%;
-        height: 80%;
-
-        object-fit: cover;
+        width: 90%;
+        height: 90%;
 
         transition: all 0.5s;
         -moz-transition: all 0.5s;
         -webkit-transition: all 0.5s;
-
-        margin: auto;
       }
 
       img:hover {
@@ -153,8 +142,12 @@ export const GalleryStyled = styled.section`
 
       span {
         position: relative;
-        bottom: 20%;
+        white-space: nowrap;
+
+        bottom: 2rem;
+
         text-shadow: 2px 2px 2px black;
+
         padding: 0.2rem;
       }
     }

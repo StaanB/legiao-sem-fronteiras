@@ -2,7 +2,7 @@
 import React from "react";
 
 // Importando Estilos
-import { Global } from "../../components/GlobalStyles";
+import { Global, GoToTop } from "../../components/GlobalStyles";
 import titleWallpaper from "./images/about-page-banner.png";
 
 // Importando seções
@@ -30,6 +30,7 @@ const AboutPage = () => {
       <About />
       <History />
       <Contact />
+      <GoToTop />
     </>
   );
 };

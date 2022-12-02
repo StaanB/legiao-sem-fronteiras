@@ -13,7 +13,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<MainPage />} />
+          <Route path="/" exact element={<MainPage />} />
           <Route path="/eventos" element={<EventSecondPage />} />
           <Route path="/sobre" element={<AboutPage />} />
           <Route path="/galeria" element={<GalleryPage />} />

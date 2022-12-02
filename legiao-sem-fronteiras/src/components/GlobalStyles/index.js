@@ -1,12 +1,27 @@
+// Import React
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 // Import styles
 import { createGlobalStyle } from "styled-components";
+
+export function GoToTop() {
+  const routePath = useLocation();
+  const onTop = () => {
+    window.scrollTo(0, 0);
+  };
+  useEffect(() => {
+    onTop();
+  }, [routePath]);
+
+  return null;
+}
 
 // Responsividade
 export const Media = {
   mobileS: "(min-width: 300px)",
   mobileL: "(min-width: 410px)",
-  tablet: "(min-width: 600px)",
-  desktop: "(min-width: 1024px)",
+  desktop: "(min-width: 1025px)",
 };
 
 // Cores para o documento

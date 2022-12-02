@@ -45,13 +45,13 @@ export const HistoryStyled = styled.div`
     }
   }
 
-  /* Responsividade para mobile */
+  /* Responsividade para mobileS */
   width: 90vw;
   height: auto;
 
   margin: auto;
 
-  margin-top: 1rem;
+  margin-top: 8rem;
   margin-bottom: 2rem;
 
   display: flex;
@@ -66,6 +66,7 @@ export const HistoryStyled = styled.div`
     display: flex;
     flex-direction: column;
     align-self: center;
+    text-align: center;
 
     margin-top: 1rem;
     margin-bottom: 3rem;

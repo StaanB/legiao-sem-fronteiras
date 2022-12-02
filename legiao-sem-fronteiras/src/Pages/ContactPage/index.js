@@ -2,7 +2,7 @@
 import React from "react";
 
 // Importando Estilos
-import { Global } from "../../components/GlobalStyles";
+import { Global, GoToTop } from "../../components/GlobalStyles";
 import contactBg from "./images/contact-page-banner.png";
 
 // Importando seções
@@ -28,6 +28,7 @@ const ContactPage = () => {
       />
       <ContactEmail />
       <Contact />
+      <GoToTop />
     </>
   );
 };

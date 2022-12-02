@@ -2,7 +2,7 @@
 import React from "react";
 
 // Importando styles
-import { Global } from "../../components/GlobalStyles";
+import { Global, GoToTop } from "../../components/GlobalStyles";
 import teste from "./images/teste.jpg";
 import fundoTitulo from "./images/event-banner-image.png";
 
@@ -38,6 +38,7 @@ const EventSecondPage = () => {
         descricao="Moto capital que irá ocorrer em Salvador reunindo vários motogrupos em todos os lugares."
       />
       <Contact />
+      <GoToTop />
     </>
   );
 };

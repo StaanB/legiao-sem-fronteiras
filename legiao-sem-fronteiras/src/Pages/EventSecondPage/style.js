@@ -7,11 +7,12 @@ export const CardEventStyled = styled.div`
   display: flex;
   flex-direction: column;
   width: 90vw;
-  height: 75vh;
+  height: auto;
 
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  padding: 1rem;
 
   align-items: center;
   justify-content: center;
@@ -74,15 +75,6 @@ export const CardEventStyled = styled.div`
       font-weight: 300;
 
       color: ${Colors.bgColor2};
-    }
-  }
-
-  /* Estilização para mobileL */
-  @media ${Media.mobileL} {
-    .spans-card-section {
-      font-size: 1.1rem !important;
-
-      margin-bottom: 6rem !important;
     }
   }
 

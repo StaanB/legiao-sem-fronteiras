@@ -3,30 +3,25 @@ import styled from "styled-components";
 import { Colors, Media } from "../../GlobalStyles";
 
 const HerobannerStyled = styled.div`
-  /* Responsividade para Tablet */
-  @media ${Media.tablet} {
-    .title-container {
-      height: 70vh !important;
-    }
-  }
-
   /* Responsividade para Desktop */
   @media ${Media.desktop} {
+    margin-top: 1rem;
+
     .title-container {
       width: 95% !important;
       height: 95% !important;
 
       background-repeat: no-repeat;
       background-size: cover;
-
+      
       margin: auto !important;
     }
 
     .background-title-text {
-      top: 25%;
       font-size: 10rem;
 
       position: relative !important;
+      top: 10rem;
       display: inline !important;
     }
 
@@ -49,7 +44,8 @@ const HerobannerStyled = styled.div`
   flex-direction: column;
 
   width: 100vw;
-  height: 100vh;
+  height: auto;
+
 
   .title-container {
     justify-content: center;
@@ -102,7 +98,7 @@ const HerobannerStyled = styled.div`
     }
 
     .title-btn {
-      margin-top: 1rem;
+      margin-bottom: 3rem;
       transition: all 0.5s ease;
       cursor: pointer;
     }

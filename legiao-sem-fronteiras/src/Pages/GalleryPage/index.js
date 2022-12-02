@@ -1,7 +1,7 @@
 import React from "react";
 
 // Import Components
-import { Global } from "../../components/GlobalStyles";
+import { Global, GoToTop } from "../../components/GlobalStyles";
 import Button from "../../components/themeChange/Button";
 import Navigation from "../../components/HomeSection/Navigation";
 import TitleSection from "../../components/TitleSections/TitleSections";
@@ -42,6 +42,7 @@ const GalleryPage = () => {
         foto5={foto5}
       />
       <Contact />
+      <GoToTop />
     </>
   );
 };

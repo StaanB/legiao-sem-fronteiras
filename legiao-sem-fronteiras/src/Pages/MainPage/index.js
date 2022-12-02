@@ -2,7 +2,7 @@ import React from "react";
 
 // Import components
 import Button from "../../components/themeChange/Button";
-import { Global } from "../../components/GlobalStyles";
+import { Global, GoToTop } from "../../components/GlobalStyles";
 import Navigation from "../../components/HomeSection/Navigation";
 import Herobanner from "../../components/HomeSection/Herobanner";
 import Event from "../../components/EventSection/Event";
@@ -21,6 +21,7 @@ const MainPage = () => {
       <About />
       <Gallery />
       <Contact />
+      <GoToTop />
     </>
   );
 };
