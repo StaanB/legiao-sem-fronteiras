@@ -29,13 +29,14 @@ const EventSecondPage = () => {
         data-aos-duration="1000"
       />
 
+      
+
       <Card
-        titulo="Moto capital em Salvador"
-        local="Salvador-BA ponto de encontro no posto"
-        data="02/12/2022"
-        hora="08:00 da manhã"
-        imagem={teste}
-        descricao="Moto capital que irá ocorrer em Salvador reunindo vários motogrupos em todos os lugares."
+        titulo="Bate e volta Paraguaçú"
+        local="Salvador-BA ponto encontro no posto X"
+        data="Janeiro"
+        hora="A definir"
+        descricao="Bate e volta com amigos em Paraguaçú"
       />
       <Contact />
       <GoToTop />

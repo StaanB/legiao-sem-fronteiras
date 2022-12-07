@@ -124,6 +124,10 @@ export const ContactStyled = styled.section`
     gap: 1rem;
 
     .number-icon {
+
+      a{
+        color: ${Colors.whiteColor};
+      }
       display: flex;
       flex-direction: row;
       align-items: center;

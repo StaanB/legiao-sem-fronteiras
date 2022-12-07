@@ -39,7 +39,7 @@ const About = () => {
         data-aos-easing="ease"
         data-aos-duration="1000"
       >
-        <h3 className="about-title">Sobre o motogrupo</h3>
+        <h3 className="about-title">Sobre o motoclube</h3>
 
         <h2>Estamos em atividade desde 2021</h2>
 

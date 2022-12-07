@@ -29,7 +29,7 @@ const Contact = () => {
 
         <div className="social-medias-icons">
           <a
-            href="https://chat.whatsapp.com/FsKDGlm1EhHBQFLmQh15vU"
+            href="https://chat.whatsapp.com/EP5hDjIY8j16tMiwJgSIj1"
             target="_blank"
           >
             <IoLogoWhatsapp />
@@ -53,17 +53,17 @@ const Contact = () => {
       <div className="contact-consult-area">
         <div className="number-icon">
           <BsFillTelephoneFill />
-          <span>(71) 9 9999-9999</span>
+          <span><a href="https://wa.me/+5571982604849" target="_blank">(71) 9 8260-4849</a></span>
         </div>
 
         <div className="contact-information-card">
           <MdEmail />
-          <p>admin@admin.com</p>
+          <p>legiaosemfronteirasmc@gmail.com</p>
         </div>
 
         <div className="contact-information-card">
           <HiLocationMarker />
-          <p>Endereço a ser colocado em breve.</p>
+          <p>Endereço em breve.</p>
         </div>
       </div>
 
